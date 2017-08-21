@@ -1,2 +1,2 @@
 # Compiles less into css for production
-lessc src/less/main.less --autoprefix=">1%,last 2 versions" dist/css/styles.css
+lessc src/less/main.less --autoprefix=">1%,last 2 versions" ./build/css/styles.css
