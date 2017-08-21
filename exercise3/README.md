@@ -1,19 +1,24 @@
-#Exercise 3
+# Exercise 3
 
 I chose to implement this exercise using React.
 
 ## Install Dependencies
-
-```npm install```
-
-## Build
-
-This will put an optimized build in the ./build directory
-
-```npm run build```
+```
+npm install
+```
 
 ## Run Tests
-```npm test```
+```
+npm test
+```
+
+## Build
+This will put an optimized build in the ./build directory
+
+```
+npm run build
+```
+
 
 ## Serve
 ```
