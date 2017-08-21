@@ -10,8 +10,8 @@
     "less": "^2.7.2"
   },
   "scripts": {
-    "build-less": "./bin/build-less",
-    "deploy": "./bin/deploy"
+    "build-all": "./bin/build-all",
+    "build-less": "./bin/build-less"
   },
   "author": "Jonathan Jackson",
   "license": "ISC"

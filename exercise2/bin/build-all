@@ -1,0 +1,2 @@
+# Builds less and puts latest index.html in ./dist folder
+npm run build-less && cp -v src/index.html dist/index.html
