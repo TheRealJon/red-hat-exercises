@@ -1,0 +1,22 @@
+// The following mixin creates a dotted grid background.
+//
+// One horizontal and one vertical gradient are applied to the background to
+// create solid stripes of the desired background color. Each stripe is a dot
+// size smaller than the grid spacing. This leaves a transparent corner where
+// the background color defined as the third argument to the background rule is
+// allowed to show through. The background size is then set to a square of the
+// desired grid spacing, which means that transparent section becomes a square
+// of the desired dot size. By default, this is pattern is repeated and fills
+// the background, creating the dot grid.
+//
+// I did not create this solution from scratch. I slightly modified a solution
+// (cited ahead) to make it into a mixin and to fix browser compatibility issues.
+// I do understand how it works and can explain in more detail if needed.
+// Citation: Edmundo Santos. https://codepen.io/edmundojr/pen/xOYJGw
+.grid-background(@bg-color, @bg-color-transparent, @dot-color, @dot-size, @dot-space){
+  background:
+    linear-gradient(@bg-color (@dot-space - @dot-size), @bg-color-transparent 1%) center,
+    linear-gradient(to right, @bg-color (@dot-space - @dot-size), @bg-color-transparent 1%) center;
+  background-color: @dot-color;
+  background-size: @dot-space @dot-space;
+}

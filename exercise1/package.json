@@ -1,0 +1,14 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "Simulation of asynchronous math service.",
+  "main": "exercise1.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jonathan Jackson",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.5.0"
+  }
+}

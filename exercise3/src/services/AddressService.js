@@ -1,0 +1,16 @@
+
+export default class AddressService{
+    static getState(zip){
+        // Tried to use Googles geocode api to get a real state from the geocoordinats,
+        // but the locations faked.
+        return AddressService.states[Math.floor(parseInt(zip.substring(0,2), 10)/2)];
+    }
+}
+
+AddressService.states = [
+    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID",
+    "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS",
+    "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK",
+    "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV",
+    "WI", "WY"
+];

@@ -1,0 +1,2 @@
+# Builds from src to dist, then deploys dist to web root
+npm run build-less && cp -v src/index.html dist/index.html && cp -Rv dist/* /var/www/html/exercise2

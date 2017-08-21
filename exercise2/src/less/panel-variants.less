@@ -1,0 +1,47 @@
+// Create a new bootstrap panel variant
+.panel-red-hat {
+
+  // Get baseline panel rules with bootstrap mixin
+  .panel-variant(transparent, @panel-rh-heading-text-color, @panel-rh-heading-bg, transparent);
+
+  .box-shadow(@panel-rh-box-shadow);
+  border-radius: @panel-rh-border-radius;
+  border: @panel-rh-border;
+
+  // Panel heading customizations
+  & >.panel-heading {
+
+    .box-shadow(@panel-rh-box-shadow); // Add box shadow to panel heading
+    border-radius: @panel-rh-border-radius;
+    border: @panel-rh-heading-border;
+    font-size: @panel-rh-heading-font-size;
+    padding: @panel-rh-heading-padding-tb @panel-rh-heading-padding-lr;
+
+
+    // Panel title customizations
+    & > .panel-title{
+      font-size: @panel-rh-title-font-size;
+      line-height: @panel-rh-title-line-height;
+      vertical-align: @panel-rh-title-v-align;
+    }
+
+    // Badge customizations
+    .badge {
+      .pull-right; // Use bootstrap utility class to float the badge right
+      border-radius: @panel-rh-badge-border-radius;
+      color: @panel-rh-badge-text-color;
+      background-color: @panel-rh-badge-bg;
+      font-size: @panel-rh-badge-font-size;
+      padding: @panel-rh-badge-padding-tb @panel-rh-badge-padding-lr;
+    }
+
+  } // End panel-heading customizations
+
+  // Panel body customizations
+  & > .panel-body{
+    border: @panel-rh-body-border;
+    border-top: none;
+    min-height: @panel-rh-body-min-height;
+  } // End panel-body customizations
+
+} // end panel-rh variant

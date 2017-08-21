@@ -1,0 +1,14 @@
+@import '../../node_modules/bootstrap/less/bootstrap';
+@import 'mixins';
+@import 'variables';
+@import 'panel-variants';
+
+// Use mixin to create grid background
+body {
+  .grid-background(@body-bg-color, @body-bg-color-transparent, @body-bg-dot-color, @body-bg-dot-size, @body-bg-dot-space);
+}
+
+// Wrapper to create top margin.
+.wrapper{
+  margin-top: 200px;
+}
