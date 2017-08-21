@@ -11,7 +11,7 @@
     "less-plugin-autoprefix": "^1.5.1"
   },
   "scripts": {
-    "build-all": "./bin/build-all",
+    "build": "./bin/build-all",
     "build-less": "./bin/build-less"
   },
   "author": "Jonathan Jackson",
