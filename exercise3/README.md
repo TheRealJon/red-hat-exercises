@@ -1,7 +1,7 @@
 # Exercise 3
 
 I chose to implement this exercise using React.
-Hosted at: [www.genuinejon.com](http://www.genuinejon.com)
+Hosted at: [www.genuinejon.com](http://www.genuinejon.com:8081)
 
 
 ## Install Dependencies
