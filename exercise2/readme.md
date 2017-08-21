@@ -1,6 +1,4 @@
 # Exercise 2
-
-Final build is in ./dist folder.
 Hosted at: [www.genuinejon.com](http://www.genuinejon.com:8080)
 
 # Build
